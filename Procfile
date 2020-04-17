@@ -1,1 +1,1 @@
-web: gunicorn notepadserver.wsgi --log-file -
+web: gunicorn notepadserver.wsgi --pythonpath=api --log-file -
