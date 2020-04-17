@@ -85,7 +85,18 @@ WSGI_APPLICATION = 'notepadserver.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'notepadserver',
+        'USER': 'notepadserver',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
+...
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
