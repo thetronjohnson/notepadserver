@@ -27,7 +27,7 @@ SECRET_KEY = 'd@kw2&8k6u2twq4fpacu1(jwjidcd44b)3*qxe$6sz+lc%1v%n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','notepadserver.herokuapp.com']
 
 
 # Application definition
